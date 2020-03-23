@@ -631,6 +631,15 @@ public class Account extends ApiResource implements MetadataStore<Account>, Paym
   @EqualsAndHashCode(callSuper = false)
   public static class Capabilities extends StripeObject {
     /**
+     * The status of the BECS Direct Debit (AU) payments capability of the account, or whether the
+     * account can directly process BECS Direct Debit (AU) charges.
+     *
+     * <p>One of {@code active}, {@code inactive}, or {@code pending}.
+     */
+    @SerializedName("au_becs_debit_payments")
+    String auBecsDebitPayments;
+
+    /**
      * The status of the card issuing capability of the account, or whether you can use Issuing to
      * distribute funds on cards
      *

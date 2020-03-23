@@ -4029,6 +4029,12 @@ public class AccountCreateParams extends ApiRequestParams {
     @SerializedName("legacy_payments")
     LEGACY_PAYMENTS("legacy_payments"),
 
+    @SerializedName("tax_reporting_us_1099_k")
+    TAX_REPORTING_US_1099_K("tax_reporting_us_1099_k"),
+
+    @SerializedName("tax_reporting_us_1099_misc")
+    TAX_REPORTING_US_1099_MISC("tax_reporting_us_1099_misc"),
+
     @SerializedName("transfers")
     TRANSFERS("transfers");
 
