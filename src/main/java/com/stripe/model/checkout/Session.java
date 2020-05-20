@@ -79,11 +79,7 @@ public class Session extends ApiResource implements HasId {
   @SerializedName("id")
   String id;
 
-  /**
-   * The line items purchased by the customer. <a
-   * href="https://stripe.com/docs/api/expanding_objects">Expand</a> this field to include it in the
-   * response.
-   */
+  /** The line items purchased by the customer. */
   @SerializedName("line_items")
   LineItemCollection lineItems;
 
